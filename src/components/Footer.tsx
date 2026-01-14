@@ -14,7 +14,7 @@ export default function Footer() {
                 <div className="w-3 h-3 bg-primary-foreground rotate-45" />
               </div>
               <span className="text-2xl font-black italic uppercase tracking-tighter">
-                Fleet <span className="text-primary/50">Ops</span>
+                Cosmic<span className="text-primary/50">Gutter</span>
               </span>
             </div>
             <p className="text-muted-foreground text-sm max-w-xs leading-relaxed font-medium">
@@ -23,25 +23,30 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Quick Links */}
+          {/* Resources Section */}
           <div className="space-y-4">
             <h4 className="text-[10px] font-bold uppercase tracking-[0.2em] text-primary/60">
-              Platform
+              Resources
             </h4>
             <ul className="space-y-2 text-sm font-semibold">
               <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  Scheduler
+                <a
+                  href="https://radar.weather.gov/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-primary transition-colors flex items-center gap-2"
+                >
+                  <div className="w-1 h-1 bg-blue-500 rounded-full" /> Local
+                  Radar
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  Fleet Tracking
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  Analytics
+                <a
+                  href="#"
+                  className="hover:text-primary transition-colors flex items-center gap-2"
+                >
+                  <div className="w-1 h-1 bg-amber-500 rounded-full" /> Crew
+                  Safety
                 </a>
               </li>
             </ul>
@@ -58,16 +63,13 @@ export default function Footer() {
                 All Systems Operational
               </span>
             </div>
-            <p className="text-[10px] text-muted-foreground font-medium uppercase tracking-wider">
-              v2.4.0-stable
-            </p>
           </div>
         </div>
 
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-[11px] font-bold text-muted-foreground uppercase tracking-widest">
-            © {currentYear} Fleet Ops Technologies Inc.
+            © {currentYear} CosmicGutter Technologies Inc.
           </p>
 
           <div className="flex items-center gap-6">
@@ -83,9 +85,8 @@ export default function Footer() {
             >
               Terms
             </a>
-            <div className="h-4 w-[1px] bg-border" />
+            <div className="h-4 w-px bg-border" />
             <div className="flex gap-2">
-              {/* Small accent dots for style */}
               <div className="w-1 h-1 rounded-full bg-primary/20" />
               <div className="w-1 h-1 rounded-full bg-primary/40" />
               <div className="w-1 h-1 rounded-full bg-primary/60" />
