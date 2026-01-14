@@ -1,0 +1,40 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Customer {
+  id        Int      @id @default(autoincrement()) // This is an Int
+  firstName String
+  lastName  String
+  email     String   @unique
+  phone     String?
+  jobs      Job[]
+  createdAt DateTime @default(now())
+}
+
+model Job {
+  id           Int       @id @default(autoincrement())
+  description  String
+  address      String?
+  status       JobStatus @default(PENDING)
+  scheduledFor DateTime?
+  price        Float?
+
+  // FIX: This must be Int to match Customer.id
+  customerId Int
+  customer   Customer @relation(fields: [customerId], references: [id])
+
+  createdAt DateTime @default(now())
+}
+
+enum JobStatus {
+  PENDING
+  SCHEDULED
+  COMPLETED
+  CANCELLED
+}
