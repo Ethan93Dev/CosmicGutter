@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌌 CosmicGutter | Fleet Ops Dispatch
 
-## Getting Started
+A high-performance, real-time dispatch and scheduling platform designed for modern gutter service operations. Built with a focus on precision, speed, and a premium "command center" aesthetic.
 
-First, run the development server:
+![Status](https://img.shields.io/badge/Status-Beta-blueviolet?style=for-the-badge)
+![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)
+![Tailwind](https://img.shields.io/badge/Tailwind_CSS-4.0-38bdf8?style=for-the-badge&logo=tailwind-css)
 
+## ✨ Features
+
+- **Master Schedule:** A bespoke calendar interface powered by `FullCalendar`, customized with OKLCH color spaces for perfect dark/light mode rendering.
+- **Real-time Dispatch:** Operational timeline tracking for field technicians.
+- **Revenue Hub:** Instant financial overview and active job tracking directly on the dashboard.
+- **Adaptive UI:** Fully responsive design using Tailwind's latest `@theme` engine and Geist Sans typography.
+- **Type-Safe Backend:** Deep integration with Prisma ORM for robust data management.
+
+## 🛠️ Tech Stack
+
+- **Framework:** [Next.js 15 (App Router)](https://nextjs.org/)
+- **Database:** [PostgreSQL / SQLite](https://www.prisma.io/) via Prisma ORM
+- **Styling:** [Tailwind CSS 4.0](https://tailwindcss.com/)
+- **Components:** Radix UI / Shadcn UI
+- **Calendar:** [@fullcalendar/react](https://fullcalendar.io/)
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+git clone [https://github.com/Ethan93Dev/CosmicGutter.git](https://github.com/Ethan93Dev/CosmicGutter.git)
+cd cosmic-gutter
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Gutter Industry Specifics
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Custom-built modules designed specifically for gutter maintenance workflows:
 
-## Learn More
+- 📏 **Linear Footage Estimator:** Built-in logic to track job size and material requirements.
+- 🍂 **Debris Level Tracking:** categorize jobs by "Light," "Medium," or "Heavy" clogs to better manage technician time.
+- 🏠 **Story-Level Pricing:** Multi-tier pricing support for 1-story, 2-story, or steep-pitch roofs.
+- 📸 **Before/After Portal:** Database support for storing job-site photos to ensure quality control.
+- 🗺️ **Optimal Routing:** Scheduled jobs are grouped by zip code to reduce "windshield time" for your trucks.
 
-To learn more about Next.js, take a look at the following resources:
+### How to add this to your project:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1.  Open your project in VS Code.
+2.  Open the file named `README.md`.
+3.  Delete everything inside and paste the code block above.
+4.  **Save and Push to GitHub:**
+    ```bash
+    git add README.md
+    git commit -m "docs: update readme with fleet ops branding and tech stack"
+    git push origin main
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Would you like me to generate a "Features" section with icons specifically for the Gutter cleaning industry?**
